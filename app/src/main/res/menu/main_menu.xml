@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mnManageProducts" android:title="@string/manage_products" />
+    <item android:id="@+id/mnManageMenu" android:title="@string/manage_menu" />
+    <item android:id="@+id/mnReport" android:title="@string/menu_relatorios" />
+</menu>

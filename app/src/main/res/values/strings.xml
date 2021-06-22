@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Point 200</string>
+    <string name="manage_products">Gerenciar produtos</string>
+    <string name="manage_menu">Gerenciar menu</string>
+    <string name="menu_relatorios">Relatórios</string>
+
+    <string name="add_product">Adicionar produto</string>
+    <string name="product">Produto</string>
+</resources>
