@@ -1,4 +1,3 @@
 package br.com.acaiteriadanana.pos.datasource
 
-class BaseRepository {
-}
+class BaseRepository

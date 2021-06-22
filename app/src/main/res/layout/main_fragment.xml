@@ -18,27 +18,10 @@
             android:id="@+id/btnSell"
             style="@style/mainButton"
             android:layout_marginTop="40dp"
-            android:text="Começar venda"
+            android:text="@string/start_selling"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/clock"/>
-
-        <Button
-            android:id="@+id/btnManageMenu"
-            style="@style/mainButton"
-            android:text="Gerenciar menu"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/btnReport"/>
-
-        <Button
-            android:id="@+id/btnReport"
-            style="@style/mainButton"
-            android:text="Vender"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"/>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

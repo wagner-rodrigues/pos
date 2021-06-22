@@ -13,7 +13,6 @@ import br.com.acaiteriadanana.pos.presentation.viewmodel.MainViewModel
 
 class MainActivity : BaseActivity() {
 
-    private val mainViewModel by viewModels<MainViewModel>()
     private lateinit var binding: MainActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
