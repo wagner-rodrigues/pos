@@ -6,20 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvProductList"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        tools:itemCount="30"
-        tools:listitem="@layout/manage_product_list_item"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        />
+    <include android:id="@+id/inSuccess" android:visibility="gone"
+        layout="@layout/product_fragment_success"/>
+
+    <include android:id="@+id/inLoading" android:visibility="gone"
+        layout="@layout/loading"/>
+
+    <include android:id="@+id/inEmpty" android:visibility="gone"
+        layout="@layout/empty"/>
+
+    <include android:id="@+id/inError" android:visibility="gone"
+        layout="@layout/error"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fab"
+        android:id="@+id/fabNewProduct"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="end|bottom"

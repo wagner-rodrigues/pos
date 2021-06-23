@@ -1,11 +1,26 @@
 package br.com.acaiteriadanana.pos.domain.useCase
 
-abstract class BaseUseCase<T> {
+import java.util.concurrent.CancellationException
 
-    internal fun run(): T {
-        return executeUseCase()
+abstract class BaseUseCase<P : BaseUseCase.BaseParameters, T : Any> {
+
+    private var parameters: P? = null
+
+    fun setParameters(parameters: P) {
+        this.parameters = parameters
     }
 
-    abstract fun executeUseCase(): T
+    internal suspend fun run(): T {
+        try {
+            return execute(parameters)
+        } catch (ce: CancellationException) {
+            throw ce
+        } catch (t: Throwable) {
+            throw t
+        }
+    }
 
+    abstract suspend fun execute(parameters: P? = null): T
+
+    open class BaseParameters
 }

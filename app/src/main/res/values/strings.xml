@@ -7,4 +7,8 @@
     <string name="add_product">Adicionar produto</string>
     <string name="product">Produto</string>
     <string name="start_selling">Começar venda</string>
+    <string name="loading">Carregando...</string>
+    <string name="no_results_found">Nenhum resultado encontrado</string>
+    <string name="error_result">Falha ao recuperar os dados</string>
+    <string name="refresh">Atualizar</string>
 </resources>

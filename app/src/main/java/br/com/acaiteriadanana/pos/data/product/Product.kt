@@ -1,13 +1,11 @@
-package br.com.acaiteriadanana.pos.domain
-
-import br.com.acaiteriadanana.pos.data.product.ProductTypeEnum
+package br.com.acaiteriadanana.pos.data.product
 
 data class Product(
     val id: Long,
     val name: String,
     val type: ProductTypeEnum,
     val image: ByteArray,
-    val price: Long? = null
+    val price: Long? = 0L
 ) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
