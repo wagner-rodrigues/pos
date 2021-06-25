@@ -13,7 +13,7 @@ interface ProductService {
     suspend fun fetchAll(): List<Product>
 
     @GET("product/{id}")
-    suspend fun fetchById(@Query("id") id: Long)
+    suspend fun fetchById(@Query("id") id: Long): Product
 
     @POST("product/")
     suspend fun add(@Body product: Product): Product

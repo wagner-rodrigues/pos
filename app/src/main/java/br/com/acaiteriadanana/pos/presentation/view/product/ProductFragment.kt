@@ -47,7 +47,7 @@ class ProductFragment : BaseFragment() {
         })
 
         binding.fabNewProduct.setOnClickListener {
-            findNavController().navigate()
+            findNavController().navigate(ProductFragmentDirections.actionProductToProductManager())
         }
     }
 

@@ -2,7 +2,6 @@ package br.com.acaiteriadanana.pos.presentation.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.ViewModel
 import br.com.acaiteriadanana.pos.common.ResultState
 import br.com.acaiteriadanana.pos.common.ResultState.Error
 import br.com.acaiteriadanana.pos.common.ResultState.Success

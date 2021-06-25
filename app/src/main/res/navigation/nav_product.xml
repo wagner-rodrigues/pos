@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     app:startDestination="@id/productFragment"
     android:id="@+id/nav_product">
     <fragment
         android:id="@+id/productFragment"
         android:name="br.com.acaiteriadanana.pos.presentation.view.product.ProductFragment"
-        android:label="ProductFragment" />
+        android:label="ProductFragment" >
+        <action
+            android:id="@+id/action_product_to_productManager"
+            app:destination="@id/productManagerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productManagerFragment"
+        android:name="br.com.acaiteriadanana.pos.presentation.view.product.ProductManagerFragment"
+        android:label="fragment_product_manager"
+        tools:layout="@layout/product_manager_fragment">
+        <argument
+            android:name="productId"
+            app:argType="long"
+            android:defaultValue="0L" />
+    </fragment>
 </navigation>
